@@ -1,16 +1,36 @@
-# peblo_story_buddy
+# Peblo AI Story Buddy
 
-A new Flutter project.
+A Flutter-based interactive storytelling experience built for Peblo's AI Story Buddy & Quiz Component Challenge.
 
-## Getting Started
+The application combines text-to-speech narration, a data-driven quiz engine, adaptive feedback, and playful animations to create an engaging educational experience for children.
 
-This project is a starting point for a Flutter application.
+## Features
 
-A few resources to get you started if this is your first Flutter project:
+- AI Buddy guided storytelling
+- Flutter TTS narration
+- Dynamic quiz rendering from JSON
+- Smooth quiz reveal animations
+- Wrong answer shake + haptic feedback
+- Confetti success celebration
+- Adaptive hint system
+- Riverpod state management
+- Lightweight architecture optimized for mid-range Android devices
+- Error recovery and retry flows
+- Local progress persistence
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Tech Stack
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Flutter
+- Riverpod
+- Flutter TTS
+- Shared Preferences
+- Confetti Package
+
+## Architecture
+
+Presentation Layer
+→ Riverpod State Layer
+→ Service Layer (TTS + Storage)
+→ Data Models
+
+The application follows a reactive state-driven architecture with clear separation of concerns and optimized rebuild patterns.
